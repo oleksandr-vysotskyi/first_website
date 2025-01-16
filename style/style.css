@@ -113,14 +113,11 @@ body {
     line-height: 28px;
     font-weight: 400;
     color: none;
-    border: none;
     outline: none;
     background-color: inherit;
     border: none;
-    /* Прибирає всі бордери */
     border-bottom: 2px solid #19191C;
-    /* Додає лише нижній бордер */
-    padding: 0px;
+    padding: 0;
     margin-bottom: 48px;
 }
 
@@ -133,11 +130,8 @@ body {
     border: none;
     outline: none;
     background-color: inherit;
-    border: none;
-    /* Прибирає всі бордери */
     border-bottom: 2px solid #19191C;
-    /* Додає лише нижній бордер */
-    padding: 0px;
+    padding: 0;
     margin-bottom: 80px;
 }
 
