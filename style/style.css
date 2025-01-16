@@ -11,7 +11,7 @@ body {
     align-items: center;
     max-width: 1440px;
     text-align: start;
-    margin: 0 auto;
+    margin: auto;
     flex-wrap: wrap;
     gap: 180px;
 }
@@ -92,6 +92,99 @@ body {
     font-size: 58px;
     line-height: 70px;
     font-weight: 700;
+}
+
+.find__program {
+    background-color: #DEEFE4;
+    height: 596px;
+    display: flex;
+}
+
+.find__program-container {
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items:center;
+}
+
+.text {
+    width: 710px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: none;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border: none;
+    /* Прибирає всі бордери */
+    border-bottom: 2px solid #19191C;
+    /* Додає лише нижній бордер */
+    padding: 0px;
+    margin-bottom: 48px;
+}
+
+.email {
+    width: 710px;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: none;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border: none;
+    /* Прибирає всі бордери */
+    border-bottom: 2px solid #19191C;
+    /* Додає лише нижній бордер */
+    padding: 0px;
+    margin-bottom: 80px;
+}
+
+
+.find__program-button {
+    background-color: #19191C;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #FBFBFC;
+    padding: auto;
+    width: 144px;
+    height: 54px;
+    position: relative;
+    right: 290px;
+}
+
+.find__program-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 200px;
+}
+
+.find__program-title {
+    display: flex;
+    font-size: 58px;
+    line-height: 70px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.find__program-description {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    display: flex;
+}
+
+.find__program-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: -45px;
+    right: 90px;
 }
 
 .footer {
@@ -181,6 +274,7 @@ body {
     font-weight: 600;
     color: #FBFBFC;
     gap: 28px;
+    margin-bottom: 23px;
 }
 
 .sitemap__list {

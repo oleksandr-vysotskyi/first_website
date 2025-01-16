@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://oleksandr-vysotskyi.github.io/first_website/style/style.css"> -->
+    <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
     <title>UpDate - thousands of hands-on creative classes</title>
 </head>
@@ -225,21 +226,25 @@
         </section>
 
         <section class="find__program">
-            <div class="find__program-text">
-                <h2 class="find__program-title">
-                    Can't find a suitable program?
-                </h2>
-                <p class="find__program-description">
-                    We will help you with the choice!
-                </p>
+            <div class="find__program-container">
+                <div class="find__program-box">
+                    <h2 class="find__program-title">
+                        Can't find a suitable <br> program?
+                    </h2>
+                    <p class="find__program-description">
+                        We will help you with the choice!
+                    </p>
+                </div>
+                <div class="find__program-form">
+                    <form action="https://fom.in.ua/echo" class="find__program-form" method="post" target="_self">
+                        <input class="text" type="text" placeholder="Name" name="name" required>
+                        <input class="email" type="email" placeholder="Email" name="email" required>
+                        <button class="find__program-button">
+                            Help me
+                        </button>
+                    </form>
+                </div>
             </div>
-            <form action="https://fom.in.ua/echo" class="find__program-form" method="post" target="_self">
-                <input type="text" placeholder="Name" name="name" required>
-                <input type="email" placeholder="Email" name="email" required>
-                <button class="find__program-button">
-                    Help me
-                </button>
-            </form>
         </section>
     </main>
 
