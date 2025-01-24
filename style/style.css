@@ -77,11 +77,25 @@ body {
 .offer {
     display: flex;
     justify-content: space-between;
+    background-image:
+    url"(/img/background-img.png)",
+    url"(/img/gradient-background.png)",
+    url"(/img/decorative-circle-2.png)",
+    url"(/img/decorative-circle-3.png)";
+background-position:
+    calc(50% + 200px) calc(110% + 80px),
+    calc(40% + 500px) calc(110% + 50px),
+    calc(40% + 500px) calc(110% + 10px),
+    calc(40% + 500px) calc(50% + 5px);
+background-repeat: no-repeat, no-repeat;
+background-size:
+    inherit,
+    cover
 }
 
 .offer__holder {
     max-width: 648px;
-    background-image: url(/img/decorative-circle-1.png);
+    background-image: url"(/img/decorative-circle-1.png)";
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(60% - 15px) calc(50% - 5px);
@@ -251,7 +265,7 @@ body {
 
 
 .discover {
-    padding: 168px 0 168px;
+    padding: 168px 0;
 }
 
 .discover h2 {
@@ -441,7 +455,7 @@ footer .container {
     font-weight: 600;
     color: #FBFBFC;
     margin-bottom: 23px;
-    padding: 8px 0 0 0;
+    padding: 8px 0 0;
 }
 
 .sitemap__list,
