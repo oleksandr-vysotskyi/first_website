@@ -86,9 +86,8 @@ body {
         calc(40% + 500px) calc(110% + 10px),
         calc(40% + 500px) calc(50% + 5px);
     background-repeat: no-repeat, no-repeat;
-    background:
-        initial,
-        cover
+    background-size:
+        auto auto
 }
 
 .offer__holder {
