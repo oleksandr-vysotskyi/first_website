@@ -75,27 +75,25 @@ body {
 }
 
 .offer {
-    display: flex;
-    justify-content: space-between;
     background-image:
-    url"(../img/background-img.png)",
-    url"(../img/gradient-background.png)",
-    url"(../img/decorative-circle-2.png)",
-    url"(../img/decorative-circle-3.png)";
-background-position:
-    calc(50% + 200px) calc(110% + 80px),
-    calc(40% + 500px) calc(110% + 50px),
-    calc(40% + 500px) calc(110% + 10px),
-    calc(40% + 500px) calc(50% + 5px);
-background-repeat: no-repeat, no-repeat;
-background-size:
-    inherit,
-    cover
+        url("../img/background-img.png"),
+        url("../img/gradient-background.png"),
+        url("../img/decorative-circle-2.png"),
+        url("../img/decorative-circle-3.png");
+    background-position:
+        calc(50% + 200px) calc(110% + 80px),
+        calc(40% + 500px) calc(110% + 50px),
+        calc(40% + 500px) calc(110% + 10px),
+        calc(40% + 500px) calc(50% + 5px);
+    background-repeat: no-repeat, no-repeat;
+    background:
+        initial,
+        cover
 }
 
 .offer__holder {
     max-width: 648px;
-    background-image: url"(../img/decorative-circle-1.png)";
+    background-image: url("./img/decorative-circle-1.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: calc(60% - 15px) calc(50% - 5px);
@@ -148,23 +146,6 @@ background-size:
     color: #19191C;
 }
 
-.offer {
-    background-image:
-        url(/img/background-img.png),
-        url(/img/gradient-background.png),
-        url(/img/decorative-circle-2.png),
-        url(/img/decorative-circle-3.png);
-    background-position:
-        calc(50% + 200px) calc(110% + 80px),
-        calc(40% + 500px) calc(110% + 50px),
-        calc(40% + 500px) calc(110% + 10px),
-        calc(40% + 500px) calc(50% + 5px);
-    background-repeat: no-repeat, no-repeat;
-    background-size:
-        inherit,
-        cover
-}
-
 .offer ul>li {
     text-align: center;
     width: 100%;
@@ -178,38 +159,38 @@ background-size:
     border: 2px solid #19191C;
 }
 
-.offer ul>li:first-child{
+.offer ul>li:first-child {
     position: absolute;
     left: 700px;
     bottom: 1px;
 }
 
-.offer ul>li:nth-child(2){
+.offer ul>li:nth-child(2) {
     position: absolute;
     left: 600px;
     bottom: 150px;
 }
 
 
-.offer ul>li:nth-child(3){
+.offer ul>li:nth-child(3) {
     position: absolute;
     right: 800px;
     bottom: 300px;
 }
 
-.offer ul>li:nth-child(4){
+.offer ul>li:nth-child(4) {
     position: absolute;
     right: 670px;
     top: 350px;
 }
 
-.offer ul>li:nth-child(5){
+.offer ul>li:nth-child(5) {
     position: absolute;
     right: 300px;
     top: 250px;
 }
 
-.offer ul>li:last-child{
+.offer ul>li:last-child {
     position: absolute;
     right: 100px;
     top: 400px;
@@ -336,10 +317,8 @@ background-size:
 }
 
 
-
-
 .find__program {
-    padding: 168px 0 168px 0;
+    padding: 168px 0;
     background-color: #DEEFE4;
 }
 
