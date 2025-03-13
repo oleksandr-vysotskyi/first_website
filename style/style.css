@@ -287,11 +287,8 @@ body {
     margin-bottom: 65px;
 }
 
-.discover__box ul>li:first-child>a {
-    font-weight: 700;
-}
-
-.discover__box ul>li>a {
+.discover__box a {
+    position: relative;
     display: flex;
     margin-right: 48px;
     font-size: 18px;
@@ -299,6 +296,21 @@ body {
     font-weight: 400;
     color: #19191C;
     text-decoration: none;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 4px;
+        width: 0;
+        position: absolute;
+        background-color: var(--black-color);
+        bottom: -20px;
+    }
+
+    &:hover::after {
+        width: 100%;
+        transition: 0.4s;
+    }
 }
 
 .discover__box ul>li:nth-last-child(2)>a {
