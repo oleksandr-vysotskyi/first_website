@@ -1,4 +1,5 @@
-@charset "UTF-8";
+@import "_variables";
+
 :root {
   --black-color: #19191c;
   --light-grayish-blue: #efeff2;
@@ -45,9 +46,7 @@ body {
   display: flex;
   list-style: none;
   gap: 48px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
+  @include font-style($fs-18, $fw-600, $lh-22);
 }
 
 .link {
@@ -62,9 +61,7 @@ body {
 }
 
 .logo__header {
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 30px;
+  @include font-style($fs-24, $fw-800, $lh-30);
   display: flex;
   align-items: center;
   gap: 14px;
@@ -74,9 +71,7 @@ body {
 
 .header__link {
   color: var(--black-color);
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
+  @include font-style($fs-18, $fw-600, $lh-22);
   text-decoration: none;
 }
 
@@ -91,8 +86,12 @@ body {
 
 .offer {
   padding: 50px;
-  background-image: url("../img/background-img.png"), url("../img/gradient-background.png"), url("../img/decorative-circle-2.png"), url("../img/decorative-circle-3.png");
-  background-position: calc(50% + 200px) calc(110% + 80px), calc(40% + 500px) calc(110% + 50px), calc(40% + 500px) calc(110% + 10px), calc(40% + 500px) calc(50% + 5px);
+  background-image: url("../img/background-img.png"),
+    url("../img/gradient-background.png"), url("../img/decorative-circle-2.png"),
+    url("../img/decorative-circle-3.png");
+  background-position: calc(50% + 200px) calc(110% + 80px),
+    calc(40% + 500px) calc(110% + 50px), calc(40% + 500px) calc(110% + 10px),
+    calc(40% + 500px) calc(50% + 5px);
   background-repeat: no-repeat, no-repeat;
   background-size: auto auto;
 }
@@ -108,17 +107,13 @@ body {
 
 .offer__title {
   padding-top: 186px;
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  @include font-style($fs-58, $fw-700, $lh-70);
   margin-bottom: 18px;
   color: var(--black-color);
 }
 
 .offer__info {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
+  @include font-style($fs-18, $fw-400, $lh-20);
   margin-bottom: 62px;
   color: var(--black-color);
 }
@@ -138,17 +133,13 @@ body {
 }
 
 .offer__sale {
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  @include font-style($fs-58, $fw-700, $lh-70);
   color: var(--black-color);
   margin-bottom: 8px;
 }
 
 .offer__time {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
+  @include font-style($fs-18, $fw-700, $lh-22);
   color: var(--black-color);
 }
 
@@ -162,9 +153,7 @@ body {
   min-width: 100px;
   max-width: 192px;
   padding: 16px 36px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
+  @include font-style($fs-18, $fw-600, $lh-22);
   color: var(--black-color);
   border: 2px solid var(--black-color);
 }
@@ -212,33 +201,31 @@ body {
 .learn {
   padding: 168px 50px 160px;
   background-color: var(--black-color);
-}
-.learn .learn__counter-item {
-  display: flex;
-  flex-direction: column;
-}
-.learn .learn__counter-item::after {
-  content: "";
-  display: inline-block;
-  height: 3px;
-  width: 100%;
-  background-color: var(--white-color);
+
+  .learn__counter-item {
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 3px;
+      width: 100%;
+      background-color: var(--white-color);
+    }
+  }
 }
 
 .learn h2 {
   max-width: 540px;
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  @include font-style($fs-58, $fw-700, $lh-70);
   margin-bottom: 45px;
   color: var(--milk-white-color);
 }
 
 .learn p {
   max-width: 570px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  @include font-style($fs-18, $fw-400, $lh-28);
   margin-bottom: 24px;
   color: var(--milk-white-color);
 }
@@ -249,33 +236,27 @@ body {
 }
 
 .learn__counter-item p {
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  @include font-style($fs-58, $fw-700, $lh-70);
   color: var(--milk-white-color);
   margin-bottom: 5px;
 }
 
 .learn__counter-item p + p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
+  @include font-style($fs-18, $fw-400, $lh-20);
   color: var(--milk-white-color);
   margin-bottom: 22px;
 }
 
 .discover {
   padding: 168px 50px;
-}
-.discover .container {
-  display: inherit;
+  .container {
+    display: inherit;
+  }
 }
 
 .discover h2 {
   max-width: 594px;
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  @include font-style($fs-58, $fw-700, $lh-70);
   color: var(--black-color);
   margin-bottom: 45px;
 }
@@ -296,35 +277,35 @@ body {
 .discover__list a {
   position: relative;
   display: flex;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  @include font-style($fs-18, $fw-400, $lh-28);
   color: var(--black-color);
   text-decoration: none;
-}
-.discover__list a::after {
-  content: "";
-  display: inline-block;
-  height: 4px;
-  width: 0;
-  position: absolute;
-  background-color: var(--black-color);
-  bottom: -20px;
-}
-.discover__list a:hover::after {
-  width: 100%;
-  transition: 0.4s;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 0;
+    position: absolute;
+    background-color: var(--black-color);
+    bottom: -20px;
+  }
+
+  &:hover::after {
+    width: 100%;
+    transition: 0.4s;
+  }
 }
 
 .discover__list .see-more {
   gap: 10px;
   align-items: center;
-}
-.discover__list .see-more:hover::after {
-  width: 0;
-}
-.discover__list .see-more:hover {
-  font-weight: 700;
+  &:hover::after {
+    width: 0;
+  }
+  &:hover {
+    font-weight: 700;
+  }
 }
 
 .discover__cards {
@@ -333,22 +314,18 @@ body {
   gap: 20px;
 }
 
-.discover__card-item {
+.discover__card-item{
   flex: 0 1 345px;
 }
 
 .discover__card-item h3 {
   margin: 28px 0 11px 0;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 26px;
+  @include font-style($fs-24, $fw-700, $lh-26);
   color: var(--black-color);
 }
 
 .discover__card-item p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  @include font-style($fs-18, $fw-400, $lh-28);
   color: var(--smokey-grey-color);
 }
 
@@ -369,17 +346,13 @@ body {
 
 .find__program-title {
   max-width: 800px;
-  font-size: 58px;
-  font-weight: 700;
-  line-height: 70px;
+  @include font-style($fs-58, $fw-700, $lh-70);
   margin-bottom: 28px;
 }
 
 .find__program-description {
   max-width: 280px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  @include font-style($fs-18, $fw-400, $lh-28);
 }
 
 .find__program-form {
@@ -394,9 +367,7 @@ body {
   width: 100%;
   min-width: 300px; /*  переробити через функцію*/
   max-width: 710px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  @include font-style($fs-18, $fw-400, $lh-28);
   padding-bottom: 2px;
   outline: none;
   background-color: inherit;
@@ -411,9 +382,7 @@ body {
 
 .find__program-button {
   background-color: var(--black-color);
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
+  @include font-style($fs-18, $fw-700, $lh-22);
   color: var(--milk-white-color);
   padding: 16px 36px;
   width: 150px;
@@ -431,9 +400,7 @@ footer .container {
 }
 
 .logo__footer {
-  font-size: 18px;
-  font-weight: 800;
-  line-height: 22px;
+  @include font-style($fs-18, $fw-800, $lh-22);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -448,9 +415,7 @@ footer .container {
 }
 
 .footer__box a {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 29px;
+  @include font-style($fs-24, $fw-600, $lh-29);
   color: var(--milk-white-color);
   text-decoration: none;
 }
@@ -462,9 +427,7 @@ footer .container {
 }
 
 .sitemap__title {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 22px;
+  @include font-style($fs-18, $fw-600, $lh-22);
   color: var(--milk-white-color);
   margin-bottom: 23px;
   padding: 8px 0 0;
@@ -472,15 +435,13 @@ footer .container {
 
 .sitemap__list,
 .sitemap__list a {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  @include font-style($fs-18, $fw-400, $lh-28);
   display: flex;
   flex-direction: column;
   gap: 12px;
   text-decoration: none;
   list-style: none;
-  color: var(--light-grayish-blue);
+  color: var(--light-grayish-blue)
 }
 
 .copyright {
@@ -493,9 +454,7 @@ footer .container {
 
 .copyright a,
 .copyright p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
+  @include font-style($fs-18, $fw-400, $lh-28);
   text-decoration: none;
   color: var(--smokey-grey-color);
-}/*# sourceMappingURL=style.css.map */
+}

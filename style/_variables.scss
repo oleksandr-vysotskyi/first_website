@@ -1,0 +1,37 @@
+$fw-400: 400;
+$fw-600: 600;
+$fw-700: 700;
+$fw-800: 800;
+
+$fs-18: 18px;
+$fs-24: 24px;
+$fs-58: 58px;
+
+$lh-20: 20px;
+$lh-22: 22px;
+$lh-24: 24px;
+$lh-26: 26px;
+$lh-28: 28px;
+$lh-29: 29px;
+$lh-30: 30px;
+$lh-70: 70px;
+
+@mixin between-screen($min, $max) {
+  @media screen and (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin font-style($size, $weight, $line-height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+}
+
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
