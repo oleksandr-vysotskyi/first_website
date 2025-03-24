@@ -319,7 +319,7 @@ body {
 }
 
 .discover__card-item h3 {
-  margin: 28px 0 11px 0;
+  margin: 28px 0 11px;
   @include font-style($fs-24, $fw-700, $lh-26);
   color: var(--black-color);
 }
