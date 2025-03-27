@@ -76,6 +76,22 @@ footer .container {
   text-decoration: none;
   list-style: none;
   color: var(--light-grayish-blue);
+  position: relative;
+}
+.sitemap__list::after,
+.sitemap__list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--milk-white-color);
+  transition: 0.3s ease-in;
+}
+.sitemap__list:hover::after,
+.sitemap__list a:hover::after {
+  width: 100%;
 }
 
 .copyright {

@@ -25,6 +25,9 @@
     justify-content: center;
     @include between-screen(320px, 768px) {
       max-width: 350px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 
@@ -292,7 +295,7 @@
     cursor: pointer;
     p {
       display: inline-flex;
-      padding-top: 40px;
+      padding-top: 30px;
     }
   }
 
@@ -303,6 +306,7 @@
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
+    text-align: center;
   }
 
   .dropdown-content ul {
