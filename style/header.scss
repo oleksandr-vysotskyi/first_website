@@ -40,6 +40,10 @@
       text-decoration: none;
       font-size: 18px;
       font-weight: 700;
+      &:hover {
+        scale: 1.1;
+        transition: 0.5s ease-in-out;
+      }
     }
   }
   

@@ -40,6 +40,10 @@
   font-size: 18px;
   font-weight: 700;
 }
+.header__btn:hover {
+  scale: 1.1;
+  transition: 0.5s ease-in-out;
+}
 
 .nav__list {
   display: flex;
