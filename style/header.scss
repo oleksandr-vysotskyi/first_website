@@ -296,7 +296,7 @@
     }
     .nav__list-item.active-nav a::after {
       height: 4px;
-      opacity: 1;
+      opacity: 0;
       left: 0;
       width: 100%;
     }
