@@ -39,6 +39,9 @@
         url(../img/gradient-background.png);
       background-position: right top, center center;
       background-size: 718px 481px, 295px 361px;
+      @include between-screen(320px, 1050px) {
+        background-size: 579px 481px, 295px 361px;
+      }
       background-repeat: no-repeat, no-repeat;
       width: 467px;
       height: 600px;
@@ -50,7 +53,7 @@
         left: 5px;
       }
       @include between-screen(320px, 472px) {
-        width: 400px;
+        width: 364px;
       }
     }
 
@@ -75,6 +78,10 @@
         top: 500px;
         right: 10px;
         left: 5px;
+      }
+      @include between-screen(320px, 472px) {
+        width: 350px;
+        height: 375ƒpx;
       }
     }
   }
@@ -121,7 +128,7 @@
     margin-bottom: 62px;
     color: var(--black-color);
     @include between-screen(320px, 950px) {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
 
@@ -137,6 +144,7 @@
     margin-bottom: 8px;
     @include between-screen(320px, 950px) {
       margin-bottom: 5px;
+      @include line-height($lh-30);
     }
   }
 
@@ -148,7 +156,7 @@
     color: var(--milk-white-color);
     margin-bottom: 110px;
     @include between-screen(320px, 950px) {
-      margin-bottom: 20px;
+      margin-bottom: 5px;
     }
   }
 
@@ -292,11 +300,11 @@
 @include between-screen(320px, 768px) {
   .dropdown {
     position: relative;
-    display: inline-block; 
+    display: inline-block;
     cursor: pointer;
     p {
       display: inline-flex;
-      padding-top: 30px;
+      padding-top: 10px;
     }
   }
 
@@ -320,7 +328,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    color: var(--milk-white-color)
+    color: var(--milk-white-color);
   }
 
   .dropdown-content li:hover {
