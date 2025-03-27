@@ -50,12 +50,17 @@
   bottom: -120px;
   right: 160px;
 }
-@media screen and (min-width: 320px) and (max-width: 1050px) {
+@media screen and (min-width: 473px) and (max-width: 1050px) {
+  .offer__roles::before {
+    background-size: 700px 481px, 295px 361px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 472px) {
   .offer__roles::before {
     background-size: 579px 481px, 295px 361px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 1050px) {
+@media screen and (min-width: 473px) and (max-width: 1050px) {
   .offer__roles::before {
     position: absolute;
     left: 5px;
@@ -64,6 +69,12 @@
 @media screen and (min-width: 320px) and (max-width: 472px) {
   .offer__roles::before {
     width: 364px;
+    left: 10px;
+  }
+}
+@media screen and (min-width: 473px) and (max-width: 768px) {
+  .offer__roles::before {
+    left: 60px;
   }
 }
 .offer__roles::after {

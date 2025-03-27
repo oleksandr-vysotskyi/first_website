@@ -39,7 +39,10 @@
         url(../img/gradient-background.png);
       background-position: right top, center center;
       background-size: 718px 481px, 295px 361px;
-      @include between-screen(320px, 1050px) {
+      @include between-screen(473px, 1050px) {
+        background-size: 700px 481px, 295px 361px;
+      }
+      @include between-screen(320px, 472px) {
         background-size: 579px 481px, 295px 361px;
       }
       background-repeat: no-repeat, no-repeat;
@@ -48,12 +51,16 @@
       position: absolute;
       bottom: -120px;
       right: 160px;
-      @include between-screen(320px, 1050px) {
+      @include between-screen(473px, 1050px) {
         position: absolute;
         left: 5px;
       }
       @include between-screen(320px, 472px) {
         width: 364px;
+        left: 10px
+      }
+      @include between-screen(473px, 768px) {
+        left: clamp(60px, 50px, 122px);
       }
     }
 
