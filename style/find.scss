@@ -1,0 +1,89 @@
+@import "_variables";
+
+.find__program {
+  padding: 168px 50px;
+  background-color: var(--chrome-white-color);
+  .container {
+    display: flex;
+    align-items: baseline;
+    @include between-screen(320px, 768px) {
+      align-items: center;
+    }
+    @include between-screen(320px, 768px) {
+      flex-direction: column;
+    }
+  }
+  @include between-screen(768px, 1060px) {
+    padding: 80px 50px;
+  }
+  @include between-screen(320px, 768px) {
+    padding: 40px 25px;
+  }
+}
+
+.find__program-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.find__program-title {
+  max-width: 800px;
+  font-size: clamp($fs-30, $vw-5, $fs-58);
+  @include font-style($fw-700, $lh-70);
+  margin-bottom: 28px;
+  @include between-screen(320px, 768px) {
+    margin-bottom: 20px;
+    max-width: 350px;
+    @include line-height($lh-30);
+  }
+}
+
+.find__program-description {
+  max-width: 280px;
+  font-size: clamp($fs-14, $vw-5, $fs-18);
+  @include font-style($fw-400, $lh-28);
+  @include between-screen(320px, 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.find__program-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 710px;
+  width: 100%;
+  @include between-screen(320px, 768px) {
+    align-items: center;
+  }
+}
+
+.text,
+.email {
+  width: 100%;
+  min-width: 300px;
+  max-width: 710px;
+  font-size: clamp($fs-14, $vw-5, $fs-18);
+  @include font-style($fw-400, $lh-28);
+  padding-bottom: 2px;
+  outline: none;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid var(--black-color);
+  margin-bottom: 48px;
+  @include between-screen(320px, 768px) {
+    max-width: 350px;
+  }
+}
+
+.email {
+  margin-bottom: 68px;
+}
+
+.find__program-button {
+  background-color: var(--black-color);
+  font-size: clamp($fs-14, $vw-5, $fs-18);
+  @include font-style($fw-700, $lh-22);
+  color: var(--milk-white-color);
+  padding: 16px 36px;
+  width: 150px;
+}

@@ -1,0 +1,331 @@
+@import "_variables";
+
+.offer {
+  max-height: 100vh;
+  padding: 50px;
+  @include between-screen(320px, 768px) {
+    padding: 25px;
+  }
+  position: relative;
+  @include between-screen(320px, 950px) {
+    height: 95vh;
+  }
+  .container {
+    flex-wrap: wrap;
+    @include between-screen(320px, 1050px) {
+      flex-direction: column;
+    }
+  }
+
+  &__holder {
+    max-width: 648px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    @include between-screen(320px, 768px) {
+      max-width: 350px;
+    }
+  }
+
+  &__roles {
+    &::before {
+      content: "";
+      display: block;
+      background-image: url(../img/background-img.png),
+        url(../img/gradient-background.png);
+      background-position: right top, center center;
+      background-size: 718px 481px, 295px 361px;
+      background-repeat: no-repeat, no-repeat;
+      width: 467px;
+      height: 600px;
+      position: absolute;
+      bottom: -120px;
+      right: 160px;
+      @include between-screen(320px, 1050px) {
+        position: absolute;
+        left: 5px;
+      }
+      @include between-screen(320px, 472px) {
+        width: 400px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 404px;
+      height: 404px;
+      border-radius: 100%;
+      background: radial-gradient(
+        96.57% 96.57% at 57.99% 3.76%,
+        rgb(255, 219, 186) 0%,
+        rgb(191, 237, 231) 49.51665997505188%,
+        rgb(188, 236, 246) 64.98043537139893%
+      );
+      filter: blur(100px);
+      top: 10px;
+      right: 5px;
+      z-index: -1;
+      @include between-screen(320px, 1050px) {
+        position: absolute;
+        top: 500px;
+        right: 10px;
+        left: 5px;
+      }
+    }
+  }
+
+  h1 {
+    width: clamp(350px, 100%, 650px);
+    font-size: clamp($fs-30, $vw-5, $fs-58);
+    @include font-style($fw-700, $lh-70);
+    margin-bottom: 18px;
+    @include between-screen(320px, 950px) {
+      margin-bottom: 10px;
+      @include line-height($lh-40);
+    }
+    @include between-screen(951px, 1245px) {
+      width: clamp(350px, 100%, 400px);
+    }
+    color: var(--black-color);
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 404px;
+      height: 404px;
+      border-radius: 100%;
+      background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgb(187, 186, 255) 0%,
+        rgb(191, 237, 231) 100%
+      );
+      filter: blur(30px);
+      top: 20px;
+      left: -10px;
+      z-index: -1;
+      @include between-screen(320px, 472px) {
+        width: 304px;
+        height: 304px;
+      }
+    }
+  }
+
+  p:first-of-type {
+    font-size: clamp($fs-14, $vw-5, $fs-18);
+    @include font-style($fw-400, $lh-20);
+    margin-bottom: 62px;
+    color: var(--black-color);
+    @include between-screen(320px, 950px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--blue-color);
+  }
+
+  p:nth-of-type(2) {
+    font-size: clamp($fs-24, $vw-5, $fs-58);
+    @include font-style($fw-700, $lh-70);
+    color: var(--black-color);
+    margin-bottom: 8px;
+    @include between-screen(320px, 950px) {
+      margin-bottom: 5px;
+    }
+  }
+
+  .course {
+    display: inline-block;
+    max-width: 223px;
+    background-color: var(--blue-color);
+    padding: 16px 37px;
+    color: var(--milk-white-color);
+    margin-bottom: 110px;
+    @include between-screen(320px, 950px) {
+      margin-bottom: 20px;
+    }
+    @include between-screen(951px, 1051px) {
+      //  position: absolute;
+    }
+  }
+
+  p:last-of-type {
+    font-size: clamp($fs-14, $vw-5, $fs-18);
+    @include font-style($fw-700, $lh-22);
+    color: var(--black-color);
+  }
+
+  .offer__list {
+    position: relative;
+    @include between-screen(320px, 768px) {
+      display: none;
+    }
+
+    > li {
+      display: inline-flex;
+      text-align: center;
+      min-width: 100px;
+      max-width: 192px;
+      padding: 16px 36px;
+      font-size: clamp($fs-14, $vw-5, $fs-18);
+      @include font-style($fw-600, $lh-22);
+      color: var(--black-color);
+      border: 2px solid var(--black-color);
+
+      &:first-child {
+        position: absolute;
+        right: 500px;
+        bottom: -200px;
+        @include between-screen(1051px, 1245px) {
+          bottom: -296px;
+        }
+        @include between-screen(951px, 1051px) {
+          right: -140px;
+          bottom: -2px;
+        }
+        @include between-screen(769px, 951px) {
+          right: -250px;
+          bottom: -500px;
+        }
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        right: 600px;
+        bottom: -50px;
+        @include between-screen(1051px, 1245px) {
+          bottom: -100px;
+          right: 520px;
+        }
+        @include between-screen(951px, 1051px) {
+          right: -190px;
+          bottom: 80px;
+        }
+        @include between-screen(769px, 951px) {
+          right: -232px;
+          bottom: -418px;
+        }
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        left: -655px;
+        bottom: 100px;
+        @include between-screen(1051px, 1245px) {
+          bottom: 54px;
+          left: -580px;
+        }
+        @include between-screen(951px, 1051px) {
+          left: 81px;
+          bottom: 156px;
+        }
+        @include between-screen(769px, 951px) {
+          bottom: -343px;
+          left: 63px;
+        }
+      }
+
+      &:nth-child(4) {
+        position: absolute;
+        left: -500px;
+        bottom: 250px;
+        @include between-screen(951px, 1245px) {
+          left: -402px;
+          bottom: 160px;
+        }
+        @include between-screen(951px, 1051px) {
+          left: 148px;
+          bottom: 228px;
+        }
+        @include between-screen(769px, 951px) {
+          left: 78px;
+          bottom: -269px;
+        }
+      }
+
+      &:nth-child(5) {
+        position: absolute;
+        left: -291px;
+        bottom: 284px;
+        @include between-screen(1051px, 1245px) {
+          left: -222px;
+          bottom: 53px;
+        }
+        @include between-screen(951px, 1051px) {
+          left: 194px;
+          bottom: 303px;
+        }
+        @include between-screen(769px, 951px) {
+          left: 77px;
+          bottom: -199px;
+        }
+      }
+
+      &:last-child {
+        position: absolute;
+        left: -132px;
+        bottom: 200px;
+        @include between-screen(1051px, 1245px) {
+          left: -160px;
+          bottom: -100px;
+        }
+        @include between-screen(951px, 1051px) {
+          left: 267px;
+          bottom: 385px;
+        }
+        @include between-screen(769px, 951px) {
+          left: 79px;
+          bottom: -131px;
+        }
+      }
+    }
+  }
+}
+.dropdown {
+  display: none;
+}
+
+@include between-screen(320px, 768px) {
+  .dropdown {
+    position: relative;
+    display: inline-block; 
+    cursor: pointer;
+    p {
+      display: inline-flex;
+      padding-top: 40px;
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--black-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white; /* Додали колір тексту */
+  }
+
+  .dropdown-content li:hover {
+    background-color: var(--black-color);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}

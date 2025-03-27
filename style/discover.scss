@@ -1,0 +1,112 @@
+@import "_variables";
+
+.discover {
+  padding: 168px 50px;
+  @include between-screen(768px, 1060px) {
+    padding: 80px 50px;
+  }
+  @include between-screen(320px, 768px) {
+    padding: 40px 25px;
+  }
+  .container {
+    display: inherit;
+    @include between-screen(320px, 1060px) {
+        text-align: center;
+      }
+  }
+}
+
+.discover h2 {
+  max-width: 594px;
+  font-size: clamp($fs-30, $vw-5, $fs-58);
+  @include font-style($fw-700, $lh-70);
+  color: var(--black-color);
+  margin-bottom: 45px;
+  @include between-screen(320px, 768px) {
+    margin-bottom: 20px;
+    @include line-height($lh-30);
+  }
+}
+
+.discover__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  flex-wrap: wrap;
+  @include between-screen(320px, 768px) {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.discover__list ul {
+  display: flex;
+  gap: 65px;
+  @include between-screen(320px, 1060px) {
+    gap: 20px;
+    justify-content: center;
+  }
+  flex-wrap: wrap;
+}
+
+.discover__list a {
+  position: relative;
+  display: flex;
+  font-size: clamp($fs-14, $vw-5, $fs-18);
+  @include font-style($fw-400, $lh-28);
+  color: var(--black-color);
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 4px;
+    width: 0;
+    position: absolute;
+    background-color: var(--black-color);
+    bottom: -20px;
+  }
+
+  &:hover::after {
+    width: 100%;
+    transition: 0.4s;
+  }
+}
+
+.discover__list .see-more {
+  gap: 10px;
+  align-items: center;
+  &:hover::after {
+    width: 0;
+  }
+  &:hover {
+    font-weight: 700;
+  }
+}
+
+.discover__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @include between-screen(320px, 768px) {
+    justify-content: center;
+  }
+}
+
+.discover__card-item {
+  flex: 0 1 345px;
+}
+
+.discover__card-item h3 {
+  margin: 28px 0 11px;
+  font-size: clamp($fs-18, $vw-5, $fs-24);
+  @include font-style($fw-700, $lh-26);
+  color: var(--black-color);
+}
+
+.discover__card-item p {
+  font-size: clamp($fs-14, $vw-5, $fs-18);
+  @include font-style($fw-400, $lh-28);
+  color: var(--smokey-grey-color);
+}

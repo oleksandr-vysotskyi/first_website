@@ -3,8 +3,10 @@ $fw-600: 600;
 $fw-700: 700;
 $fw-800: 800;
 
+$fs-14: 14px;
 $fs-18: 18px;
 $fs-24: 24px;
+$fs-30: 30px;
 $fs-58: 58px;
 
 $lh-20: 20px;
@@ -14,7 +16,10 @@ $lh-26: 26px;
 $lh-28: 28px;
 $lh-29: 29px;
 $lh-30: 30px;
+$lh-40: 40px;
 $lh-70: 70px;
+
+$vw-5: 5vw;
 
 @mixin between-screen($min, $max) {
   @media screen and (min-width: $min) and (max-width: $max) {
@@ -22,16 +27,15 @@ $lh-70: 70px;
   }
 }
 
-@mixin font-style($size, $weight, $line-height) {
-  font-size: $size;
+@mixin font-style($weight, $line-height) {
   font-weight: $weight;
   line-height: $line-height;
 }
 
-@mixin font-size($size) {
-  font-size: $size;
-}
-
 @mixin font-weight($weight) {
   font-weight: $weight;
+}
+
+@mixin line-height($line-height) {
+  line-height: $line-height;
 }

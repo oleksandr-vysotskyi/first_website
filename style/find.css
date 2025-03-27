@@ -1,0 +1,108 @@
+.find__program {
+  padding: 168px 50px;
+  background-color: var(--chrome-white-color);
+}
+.find__program .container {
+  display: flex;
+  align-items: baseline;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .find__program .container {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .find__program .container {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1060px) {
+  .find__program {
+    padding: 80px 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .find__program {
+    padding: 40px 25px;
+  }
+}
+
+.find__program-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.find__program-title {
+  max-width: 800px;
+  font-size: clamp(30px, 5vw, 58px);
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .find__program-title {
+    margin-bottom: 20px;
+    max-width: 350px;
+    line-height: 30px;
+  }
+}
+
+.find__program-description {
+  max-width: 280px;
+  font-size: clamp(14px, 5vw, 18px);
+  font-weight: 400;
+  line-height: 28px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .find__program-description {
+    margin-bottom: 10px;
+  }
+}
+
+.find__program-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 710px;
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .find__program-form {
+    align-items: center;
+  }
+}
+
+.text,
+.email {
+  width: 100%;
+  min-width: 300px;
+  max-width: 710px;
+  font-size: clamp(14px, 5vw, 18px);
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 2px;
+  outline: none;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px solid var(--black-color);
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .text,
+  .email {
+    max-width: 350px;
+  }
+}
+
+.email {
+  margin-bottom: 68px;
+}
+
+.find__program-button {
+  background-color: var(--black-color);
+  font-size: clamp(14px, 5vw, 18px);
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--milk-white-color);
+  padding: 16px 36px;
+  width: 150px;
+}/*# sourceMappingURL=find.css.map */

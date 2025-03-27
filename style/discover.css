@@ -1,0 +1,126 @@
+.discover {
+  padding: 168px 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1060px) {
+  .discover {
+    padding: 80px 50px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .discover {
+    padding: 40px 25px;
+  }
+}
+.discover .container {
+  display: inherit;
+}
+@media screen and (min-width: 320px) and (max-width: 1060px) {
+  .discover .container {
+    text-align: center;
+  }
+}
+
+.discover h2 {
+  max-width: 594px;
+  font-size: clamp(30px, 5vw, 58px);
+  font-weight: 700;
+  line-height: 70px;
+  color: var(--black-color);
+  margin-bottom: 45px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .discover h2 {
+    margin-bottom: 20px;
+    line-height: 30px;
+  }
+}
+
+.discover__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .discover__list {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.discover__list ul {
+  display: flex;
+  gap: 65px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 320px) and (max-width: 1060px) {
+  .discover__list ul {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.discover__list a {
+  position: relative;
+  display: flex;
+  font-size: clamp(14px, 5vw, 18px);
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--black-color);
+  text-decoration: none;
+}
+.discover__list a::after {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 0;
+  position: absolute;
+  background-color: var(--black-color);
+  bottom: -20px;
+}
+.discover__list a:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.discover__list .see-more {
+  gap: 10px;
+  align-items: center;
+}
+.discover__list .see-more:hover::after {
+  width: 0;
+}
+.discover__list .see-more:hover {
+  font-weight: 700;
+}
+
+.discover__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .discover__cards {
+    justify-content: center;
+  }
+}
+
+.discover__card-item {
+  flex: 0 1 345px;
+}
+
+.discover__card-item h3 {
+  margin: 28px 0 11px;
+  font-size: clamp(18px, 5vw, 24px);
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--black-color);
+}
+
+.discover__card-item p {
+  font-size: clamp(14px, 5vw, 18px);
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--smokey-grey-color);
+}/*# sourceMappingURL=discover.css.map */

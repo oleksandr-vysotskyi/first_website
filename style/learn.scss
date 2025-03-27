@@ -1,0 +1,80 @@
+@import "_variables";
+
+.learn .container {
+  align-items: start;
+  @include between-screen(769px, 1060px) {
+    flex-direction: column;
+  }
+  @include between-screen(320px, 768px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .learn__text {
+    @include between-screen(320px, 768px) {
+      max-width: 350px;
+    }
+  }
+}
+
+.learn {
+  padding: 168px 50px 160px;
+  background-color: var(--black-color);
+  @include between-screen(768px, 1060px) {
+    padding: 80px 50px;
+  }
+  @include between-screen(320px, 768px) {
+    padding: 40px 25px;
+  }
+
+  .learn__counter-item {
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 3px;
+      width: 100%;
+      background-color: var(--white-color);
+    }
+  }
+}
+
+.learn h2 {
+  max-width: 540px;
+  font-size: clamp($fs-30, $vw-5, $fs-58);
+  @include font-style($fw-700, $lh-70);
+  margin-bottom: 45px;
+  color: var(--milk-white-color);
+  @include between-screen(320px, 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.learn p {
+  max-width: 570px;
+  font-size: clamp($fs-14, $vw-5, $fs-18);
+  @include font-style($fw-400, $lh-28);
+  margin-bottom: 24px;
+  color: var(--milk-white-color);
+}
+
+.learn p + p {
+  max-width: 590px;
+  margin-bottom: 0;
+}
+
+.learn__counter-item p {
+  font-size: clamp($fs-30, $vw-5, $fs-58);
+  @include font-style($fw-700, $lh-70);
+  color: var(--milk-white-color);
+  margin-bottom: 5px;
+}
+
+.learn__counter-item p + p {
+  font-size: clamp($fs-14, $vw-5, $fs-18);
+  @include font-style($fw-400, $lh-20);
+  color: var(--milk-white-color);
+  margin-bottom: 22px;
+}

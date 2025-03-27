@@ -1,0 +1,32 @@
+@import url("header.css");
+@import url("offer.css");
+@import url("learn.css");
+@import url("discover.css");
+@import url("find.css");
+@import url("footer.css");
+:root {
+  --black-color: #19191c;
+  --light-grayish-blue: #efeff2;
+  --blue-color: #504dee;
+  --milk-white-color: #fbfbfc;
+  --white-color: #fff;
+  --smokey-grey-color: #6d6d77;
+  --chrome-white-color: #deefe4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+}/*# sourceMappingURL=styles.css.map */
